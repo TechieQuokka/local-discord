@@ -1,0 +1,182 @@
+/* SearchModal - Discord 검색 모달 */
+
+.search-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 100px;
+  z-index: 1000;
+}
+
+.search-modal {
+  width: 100%;
+  max-width: 560px;
+  background-color: #313338;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* 검색 입력 */
+.search-input-container {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background-color: #1e1f22;
+}
+
+.search-icon {
+  color: #949ba4;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.search-input-container input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: #f2f3f5;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-input-container input::placeholder {
+  color: #6d6f78;
+}
+
+.clear-btn {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: #4e5058;
+  color: #dbdee1;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clear-btn:hover {
+  background: #5865f2;
+}
+
+/* 검색 결과 */
+.search-results {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.search-empty {
+  padding: 40px 20px;
+  text-align: center;
+  color: #949ba4;
+}
+
+.search-empty p {
+  font-size: 16px;
+  margin: 0 0 8px;
+  color: #f2f3f5;
+}
+
+.search-hint {
+  font-size: 14px;
+}
+
+.results-header {
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #949ba4;
+  text-transform: uppercase;
+  background-color: #2b2d31;
+}
+
+/* 검색 결과 아이템 */
+.search-result-item {
+  padding: 12px 16px;
+  cursor: pointer;
+  border-bottom: 1px solid #3f4147;
+}
+
+.search-result-item:hover {
+  background-color: #35373c;
+}
+
+.result-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+
+.result-server {
+  color: #f2f3f5;
+  font-weight: 600;
+}
+
+.result-separator {
+  color: #6d6f78;
+}
+
+.result-channel {
+  color: #949ba4;
+}
+
+.result-time {
+  color: #6d6f78;
+  font-size: 12px;
+  margin-left: auto;
+}
+
+.result-content {
+  font-size: 15px;
+  color: #dbdee1;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* 검색어 하이라이트 */
+.highlight {
+  background-color: #5865f2;
+  color: #fff;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+/* 푸터 */
+.search-footer {
+  padding: 12px 16px;
+  background-color: #2b2d31;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  font-size: 12px;
+  color: #6d6f78;
+}
+
+/* 스크롤바 */
+.search-results::-webkit-scrollbar {
+  width: 8px;
+}
+
+.search-results::-webkit-scrollbar-track {
+  background: #2b2d31;
+}
+
+.search-results::-webkit-scrollbar-thumb {
+  background-color: #1a1b1e;
+  border-radius: 4px;
+}

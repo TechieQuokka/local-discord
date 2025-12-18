@@ -1,0 +1,102 @@
+/* MessageInput - Discord 메시지 입력창 */
+
+.message-input-container {
+  padding: 0 16px 24px;
+  flex-shrink: 0;
+}
+
+.message-input-wrapper {
+  display: flex;
+  align-items: flex-end;
+  background-color: #383a40;
+  border-radius: 8px;
+  padding: 0 16px;
+}
+
+/* 첨부 버튼 */
+.attach-button {
+  width: 32px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: #b5bac1;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 4px;
+  flex-shrink: 0;
+}
+
+.attach-button:hover:not(:disabled) {
+  color: #dbdee1;
+}
+
+.attach-button:disabled {
+  color: #4e5058;
+  cursor: not-allowed;
+}
+
+/* 입력 영역 */
+.message-input {
+  flex: 1;
+  min-height: 44px;
+  max-height: 200px;
+  padding: 11px 0;
+  border: none;
+  background: transparent;
+  color: #dbdee1;
+  font-size: 16px;
+  font-family: inherit;
+  line-height: 1.375;
+  resize: none;
+  overflow-y: auto;
+}
+
+.message-input:focus {
+  outline: none;
+}
+
+.message-input::placeholder {
+  color: #6d6f78;
+}
+
+/* 스크롤바 스타일 */
+.message-input::-webkit-scrollbar {
+  width: 8px;
+}
+
+.message-input::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.message-input::-webkit-scrollbar-thumb {
+  background-color: #1a1b1e;
+  border-radius: 4px;
+}
+
+/* 이모지 버튼 */
+.emoji-button {
+  width: 32px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: #b5bac1;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 4px;
+  flex-shrink: 0;
+}
+
+.emoji-button:hover:not(:disabled) {
+  color: #dbdee1;
+}
+
+.emoji-button:disabled {
+  color: #4e5058;
+  cursor: not-allowed;
+}

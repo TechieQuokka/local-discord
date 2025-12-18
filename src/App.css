@@ -1,0 +1,71 @@
+/* App 레이아웃 - Discord 3-Column 구조 */
+
+.app {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #313338;
+}
+
+/* 메인 콘텐츠 영역 (메시지 + 입력) */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* 플로팅 버튼 그룹 */
+.floating-buttons {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 100;
+}
+
+/* 북마크 버튼 */
+.bookmark-trigger {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: #4e5058;
+  color: #b5bac1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+  font-size: 18px;
+}
+
+.bookmark-trigger:hover {
+  background-color: #faa81a;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* 설정 버튼 */
+.settings-trigger {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: #4e5058;
+  color: #b5bac1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+}
+
+.settings-trigger:hover {
+  background-color: #5865f2;
+  color: #fff;
+  transform: rotate(90deg);
+}

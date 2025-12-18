@@ -1,0 +1,82 @@
+/* TagCloud - 태그 클라우드 컴포넌트 */
+
+.tag-cloud {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #3f4147;
+}
+
+.tag-cloud-header {
+  display: flex;
+  align-items: center;
+  padding: 0 8px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #949ba4;
+  letter-spacing: 0.02em;
+}
+
+.tag-cloud-header .tag-icon {
+  margin-right: 4px;
+  font-size: 14px;
+}
+
+.tag-cloud-header .clear-all-tags {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: #5865f2;
+  font-size: 11px;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 3px;
+  transition: background-color 0.15s;
+}
+
+.tag-cloud-header .clear-all-tags:hover {
+  background-color: rgba(88, 101, 242, 0.15);
+}
+
+.tag-cloud-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 0 8px;
+}
+
+.tag-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  background-color: #2b2d31;
+  border: none;
+  border-radius: 4px;
+  color: #b5bac1;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+
+.tag-item:hover {
+  background-color: #35373c;
+  color: #fff;
+}
+
+.tag-item.active {
+  background-color: #5865f2;
+  color: #fff;
+}
+
+.tag-count {
+  font-size: 0.75em;
+  opacity: 0.7;
+  padding: 1px 4px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.tag-item.active .tag-count {
+  background-color: rgba(255, 255, 255, 0.2);
+}
